@@ -536,7 +536,7 @@ textarea {
 
 .navigation {
 
-    @include max(992px) {
+    @include max(1250px) {
         position: relative;
     }
 
@@ -552,6 +552,10 @@ textarea {
         .logo {
             .image {
                 height: 58px;
+
+                @include max(1250px) {
+                    height: 40px;
+                }
 
                 @include max(992px) {
                     height: 48px;
@@ -606,6 +610,11 @@ textarea {
                             font-size: 20px;
                             font-weight: 400;
                             color: $black;
+
+
+                            @include max(1250px) {
+                                font-size: 16px;
+                            }
 
                             @include max(992px) {
                                 display: block;
@@ -2074,6 +2083,7 @@ textarea {
 }
 
 // end-gallery-archive
+
 // gallery-innerpage
 
 .gallery_innerpage {
@@ -2154,26 +2164,69 @@ textarea {
 
         }
 
-        .bank_qr {
+        .bank_qr_wrapper {
             display: flex;
-            gap: 40px;
-            align-items: center;
             justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
 
-            @include max(768px) {
+            .bank_qr {
+                width: calc((100% / 3) - 40px + 40px / 3);
+                display: flex;
                 flex-direction: column;
-            }
-
-            .image {
-                height: 391px;
 
                 @include max(768px) {
-                    height: 300px;
+                    width: calc((100% / 1) - 40px + 40px / 1);
+                }
+
+                .image {
+                    margin-bottom: 40px;
+                    background: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-block: 10px;
+
+                    .bank_logo {
+                        height: 60px;
+                    }
+                }
+
+                .qr_logo {
+                    background: $white;
+
+                    .qr {
+                        height: 289px;
+                    }
+                }
+
+                .bank_details {
+                    color: $white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    align-items: center;
+                    margin-top: 30px;
+
+                    h4 {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    h5 {
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
                 }
             }
         }
     }
-
 }
 
 // end-donate
@@ -2275,6 +2328,10 @@ textarea {
                 font-size: 14px;
                 font-weight: 400;
                 color: $white;
+
+                a {
+                    color: $white;
+                }
             }
         }
     }

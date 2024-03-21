@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <title>CL Tech</title>
+    <title>Sajha Sahayatri Nepal</title>
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon_circle.ico">
 
     <!-- BOotstrap version 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />

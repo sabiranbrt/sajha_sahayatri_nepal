@@ -56,7 +56,7 @@
          <div class="container">
              <div class="footer_bottom_wrapper">
                  <p>@Copyright 2024sajhasahayatrinepal</p>
-                 <p>Designed and Developed by: Code Logic Technologies</p>
+                 <p>Designed and Developed by: <a href="#"><span>Code Logic</span> Technologies</a></p>
              </div>
          </div>
      </div>

@@ -488,7 +488,7 @@ textarea:focus-visible {
   color: #fff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1250px) {
   .navigation {
     position: relative;
   }
@@ -505,6 +505,11 @@ textarea:focus-visible {
 }
 .navigation .navigation_wrapper .logo .image {
   height: 58px;
+}
+@media (max-width: 1250px) {
+  .navigation .navigation_wrapper .logo .image {
+    height: 40px;
+  }
 }
 @media (max-width: 992px) {
   .navigation .navigation_wrapper .logo .image {
@@ -561,6 +566,11 @@ textarea:focus-visible {
   font-size: 20px;
   font-weight: 400;
   color: #212123;
+}
+@media (max-width: 1250px) {
+  .navigation .navigation_wrapper .nav_bar .nav_wrapper .nav_list .nav_items a {
+    font-size: 16px;
+  }
 }
 @media (max-width: 992px) {
   .navigation .navigation_wrapper .nav_bar .nav_wrapper .nav_list .nav_items a {
@@ -1857,24 +1867,59 @@ textarea:focus-visible {
     align-self: center;
   }
 }
-.donate .donate_wrapper .bank_qr {
+.donate .donate_wrapper .bank_qr_wrapper {
   display: flex;
+  justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
+}
+.donate .donate_wrapper .bank_qr_wrapper .bank_qr {
+  width: calc(33.3333333333% - 40px + 13.3333333333px);
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .donate .donate_wrapper .bank_qr_wrapper .bank_qr {
+    width: calc(100% - 40px + 40px);
+  }
+}
+.donate .donate_wrapper .bank_qr_wrapper .bank_qr .image {
+  margin-bottom: 40px;
+  background: #fff;
+  display: flex;
   align-items: center;
   justify-content: center;
+  padding-block: 10px;
 }
-@media (max-width: 768px) {
-  .donate .donate_wrapper .bank_qr {
-    flex-direction: column;
-  }
+.donate .donate_wrapper .bank_qr_wrapper .bank_qr .image .bank_logo {
+  height: 60px;
 }
-.donate .donate_wrapper .bank_qr .image {
-  height: 391px;
+.donate .donate_wrapper .bank_qr_wrapper .bank_qr .qr_logo {
+  background: #fff;
 }
-@media (max-width: 768px) {
-  .donate .donate_wrapper .bank_qr .image {
-    height: 300px;
-  }
+.donate .donate_wrapper .bank_qr_wrapper .bank_qr .qr_logo .qr {
+  height: 289px;
+}
+.donate .donate_wrapper .bank_qr_wrapper .bank_qr .bank_details {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  margin-top: 30px;
+}
+.donate .donate_wrapper .bank_qr_wrapper .bank_qr .bank_details h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+.donate .donate_wrapper .bank_qr_wrapper .bank_qr .bank_details h5 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.donate .donate_wrapper .bank_qr_wrapper .bank_qr .bank_details span {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .footer .footer_wrapper {
@@ -1955,5 +2000,8 @@ textarea:focus-visible {
 .footer .footer_bottom .footer_bottom_wrapper p {
   font-size: 14px;
   font-weight: 400;
+  color: #fff;
+}
+.footer .footer_bottom .footer_bottom_wrapper p a {
   color: #fff;
 }/*# sourceMappingURL=main.css.map */
